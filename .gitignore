@@ -1,0 +1,8 @@
+_site/**/*
+_tmp/**/*
+node_modules/
+*.lock
+*.log
+*.map
+*.min.js
+!.gitkeep

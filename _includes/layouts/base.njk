@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title or metadata.title }}</title>
+        <meta name="description" content="{{ description or metadata.description }}">
+        <link rel="stylesheet" href="{{ '/style.css' | url }}">
+    </head>
+    <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+        <header class="site-header">
+            {% include 'partials/navigation.njk' %}
+        </header>
+        <div class="site-content">
+            <div class="page-header">
+                <h1>{{ title }}</h1>
+            </div>
+            <div id="root" class="page-content"></div>
+        </div>
+        <footer class="site-footer" role="contentinfo"></footer>
+    </body>
+    <script type="text/javascript" src="{{ '/bundle.min.js' | url }}"></script>
+</html>
