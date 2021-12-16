@@ -6,7 +6,7 @@
         <title>{{ title or metadata.title }}</title>
         <meta name="description" content="{{ description or metadata.description }}">
         <link rel="stylesheet" href="{{ '/style.css' | url }}">
-        <link href="data:image/x-icon;base64,iVBORw0KGgoABIAAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+        {% include 'partials/favicon.njk' %}
     </head>
     <body{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {% block siteHeader %}
