@@ -1,0 +1,14 @@
+{% extends 'layouts/default.njk' %}
+
+{% block siteContent %}
+  <div class="site-content">
+      <div class="page-header sr-only"> {# visually hide the header #}
+          <h1>{{ title }}</h1>
+      </div>
+      <div id="react_root" class="page-content"></div> {# attach react #}
+  </div>
+{% endblock %}
+
+{% block siteFooter %}
+  {# omit the footer #}
+{% endblock %}

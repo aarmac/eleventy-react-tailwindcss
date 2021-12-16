@@ -1,7 +1,5 @@
 ---
-layout: layouts/base.njk
-templateClass: page-index
-title: Eleventy with React
+layout: layouts/home.njk
+templateClass: page-home
+title: Home
 ---
-
-Welcome to the Eleventy with React boilerplate.

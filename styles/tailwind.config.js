@@ -35,7 +35,11 @@ const globalStyles = ({ addBase, config }) => {
  * Configuration
  */
 module.exports = {
-    content: ['_site/**/*.html'],
+    content: [
+      './_includes/**/*.njk',
+      './_site/**/*.{html,js}',
+      './scripts/components/**/*.{js,jsx}',
+    ],
     theme: {
         screens: {
             sm: '480px',
